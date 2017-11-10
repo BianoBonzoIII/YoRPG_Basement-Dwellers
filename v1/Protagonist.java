@@ -5,7 +5,7 @@
   2017-11-08
 */
 
-public class Protagonist{
+public class Protagonist extends Character{
     private static String name;// initializes String name 
     private static int hp;// initializes an int hp representing health
     private static int str;// initializes an int str representing strength
@@ -37,7 +37,7 @@ public class Protagonist{
     public static void lowerHP(int dmg){// lowers hp based on the value of dmg
 	hp -= dmg;
     }
-    public static int attack(Object mons){
+    public static int attack(Monster mons){
 	int dmg = (int)((str * atkRate) - Monster.getDefense());//calculates damage
 	lowerHP(dmg);//sets hp based on method above
 	return dmg;//returns the amount of damage done

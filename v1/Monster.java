@@ -5,7 +5,7 @@
   2017-11-08
 */
 
-public class Monster {
+public class Monster extends Character {
     private static int hp; 
     private static int str;
     private static int def;
@@ -40,13 +40,10 @@ public class Monster {
 	hp -= damage;
     }
 
-    public static int attack(Object protag) {
+    public static int attack(Protagonist protag) {
 	int damage = (int) ((str * atkrate) - Protagonist.getDefense());// finds damage dealt based on monster's attack and warrior's defense
 	lowerHP(damage);//reduces hp based on preceding method
 	return damage;//returns damage dealt
-    }
-
-    public static void main (String[] args) {
     }
 }
 	
