@@ -1,6 +1,5 @@
 /*
-  Team Basement Dwellers -- Brian, George, Kendrick 
-  Brian Lin 
+  Team Basement Dwellers -- Brian, George, Kendrick  
   APCS1 - pd8
   2017-11-08
 */
