@@ -4,7 +4,7 @@
   2017-11-08
 */
 
-public class Protagonist extends Character{
+public abstract class Protagonist extends Character{
 
     public Protagonist(String n){
 	name = n; // sets name to n
@@ -18,13 +18,13 @@ public class Protagonist extends Character{
 	return name;// returns object's name
     }
 
-    public static void specialize(){//buffs attack at cost of defense
+    public abstract static void specialize(){//buffs attack at cost of defense
 	atkRate += .8;
 	str += 8;
 	def -= 10;
     }
  
-    public void normalize(){// debuffs all stats that were buffed in specialize() back to their original values
+    public abstract void normalize(){// debuffs all stats that were buffed in specialize() back to their original values
 	atkRate = 0.4;
 	str = 100;
 	def = 40;
