@@ -22,6 +22,7 @@ public class YoRPG
   private int moveCount;
   private boolean gameOver;
   private int difficulty;
+  private int classSelection;
 
   private InputStreamReader isr;
   private BufferedReader in;
@@ -77,6 +78,29 @@ public class YoRPG
 
     //instantiate the player's character
     pat = new Protagonist( name );
+
+    //Allows player to choose their class to play
+    s = "How doth thy fight the might creatures? (Choose your class): \n";
+    s += "\t1: Swordsman\n";
+    s += "\t2: Archer\n";
+    s += "\t3: Mage\n";
+    s += "Selection: ";
+    System.out.print( s );
+
+    try {
+	    classSelection = Integer.parseInt( in.readLine() );
+    }
+    catch ( IOException e ) { }
+
+    if (classSelection == 1) {
+	pat = new Swordsman();
+	System.out.println("Excellent Choice... " + Swordsman.about());	
+    }  else if (classSelection == 2) {
+   	pat = new Archer();
+	System.out.println("How wise... " + Archer.about());
+    }  else {
+	pat = new Mage();
+	System.out.println("Marvelous... " + Mage.about());
 
   }//end newGame()
 
@@ -156,6 +180,7 @@ public class YoRPG
     //As usual, move the begin-comment bar down as you progressively 
     //test each new bit of functionality...
 
+  
     //loading...
     YoRPG game = new YoRPG();
     int encounters = 0;
