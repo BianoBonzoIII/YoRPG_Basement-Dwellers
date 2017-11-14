@@ -93,13 +93,13 @@ public class YoRPG
     catch ( IOException e ) { }
 
     if (classSelection == 1) {
-	pat = new Swordsman();
+	Protaganist pat = new Swordsman();
 	System.out.println("Excellent Choice... " + Swordsman.about());	
     }  else if (classSelection == 2) {
-   	pat = new Archer();
+   	Protaganist pat = new Archer();
 	System.out.println("How wise... " + Archer.about());
     }  else {
-	pat = new Mage();
+	Protaganist pat = new Mage();
 	System.out.println("Marvelous... " + Mage.about());
 
   }//end newGame()
