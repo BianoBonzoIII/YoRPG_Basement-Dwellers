@@ -5,7 +5,12 @@
 */
 
 public abstract class Protagonist extends Character{
-
+	public static String name; 
+	public static int hp; 
+	public static int str;
+	public static int def;
+	public static double atkRate;
+	
     public Protagonist(String n) {
 	name = n; // sets name to n
 	hp = 125;// sets health to 125
