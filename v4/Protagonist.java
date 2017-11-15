@@ -18,15 +18,9 @@ public abstract class Protagonist extends Character{
 	return name;// returns object's name
     }
 
-    public abstract static void specialize(){//buffs attack at cost of defense
-	atkRate += .8;
-	str += 8;
-	def -= 10;
-    }
+    public abstract static void specialize();
  
-    public abstract void normalize(){// debuffs all stats that were buffed in specialize() back to their original values
-	atkRate = 0.4;
-	str = 100;
-	def = 40;
-    } 
+    public abstract static void normalize();
+
+    public abstract static String about();
 }
