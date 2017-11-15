@@ -6,7 +6,7 @@
 
 public abstract class Protagonist extends Character{
 
-    public Protagonist(String n){
+    public Protagonist(String n) {
 	name = n; // sets name to n
 	hp = 125;// sets health to 125
 	str = 100;// sets strength to 100
@@ -15,7 +15,7 @@ public abstract class Protagonist extends Character{
     }
 
     public static String getName(){
-	return name;// returns object's name
+	return name; // returns object's name
     }
 
     public abstract void specialize();

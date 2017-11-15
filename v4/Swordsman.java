@@ -1,6 +1,6 @@
 public class Swordsman extends Protagonist{
     public Swordsman(String n){//creates a Swordsman and sets his or her atkRate to 0.8
-	name = n;
+	super(name);
 	atkRate= 0.8;
     }
 
