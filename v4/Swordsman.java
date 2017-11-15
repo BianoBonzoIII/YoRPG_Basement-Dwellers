@@ -16,6 +16,7 @@ public class Swordsman extends Protagonist{
 	def -= 10;
     }
 	
+
     public String about(){
 	return "A brave swordsman who is an exile to his army. His swordsmanship skills are very fine and nimble.";
     }

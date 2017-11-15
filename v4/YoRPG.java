@@ -77,7 +77,7 @@ public class YoRPG
     catch ( IOException e ) { }
 
     //instantiate the player's character
-    pat = new Protagonist( name );
+    pat = new Swordsman(name);
 
     //Allows player to choose their class to play
     s = "How doth thy fight the might creatures? (Choose your class): \n";
@@ -93,13 +93,13 @@ public class YoRPG
     catch ( IOException e ) { }
 
     if (classSelection == 1) {
-	Protagonist pat = new Swordsman( name );
+	pat = new Swordsman( name );
 	System.out.println("Excellent Choice... " + pat.about());	
     }  else if (classSelection == 2) {
-   	Protagonist pat = new Archer( name );
+   	pat = new Archer( name );
 	System.out.println("How wise... " + pat.about());
     }  else {
-	Protagonist pat = new Mage( name );
+	pat = new Mage( name );
 	System.out.println("Marvelous... " + pat.about());
     }
   }//end newGame()

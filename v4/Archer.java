@@ -14,6 +14,7 @@ public class Archer extends Protagonist{
 	str += 8;
 	def -= 10;
     }
+
     public String about(){
 	return "This young archer is very strong. Strength at the cost of speed.";
     }
