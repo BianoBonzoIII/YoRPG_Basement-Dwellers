@@ -101,7 +101,7 @@ public class YoRPG
     }  else {
 	Protaganist pat = new Mage();
 	System.out.println("Marvelous... " + Mage.about());
-
+    }
   }//end newGame()
 
 
