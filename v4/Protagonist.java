@@ -18,9 +18,9 @@ public abstract class Protagonist extends Character{
 	return name;// returns object's name
     }
 
-    public abstract static void specialize();
+    public abstract void specialize();
  
-    public abstract static void normalize();
+    public abstract void normalize();
 
-    public abstract static String about();
+    public abstract String about();
 }
