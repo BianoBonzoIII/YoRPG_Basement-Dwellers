@@ -28,4 +28,5 @@ public abstract class Protagonist extends Character{
     public abstract void normalize();
 
     public abstract String about();
+
 }

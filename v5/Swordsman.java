@@ -1,7 +1,9 @@
 public class Swordsman extends Protagonist{
-    public Swordsman(String n){//creates a Swordsman and sets his or her atkRate to 0.8
+    public Swordsman(String n){//creates a Swordsman and sets his or her atkRate to 0.8, mp to 5, and intelligence to 15. 
 	super(name);
 	atkRate= 0.8;
+	mp = 5;
+	intelligence = 15;
     }
 
     public void normalize(){// debuffs all stats that were buffed in specialize() back to their original values

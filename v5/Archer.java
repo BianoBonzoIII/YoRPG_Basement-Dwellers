@@ -1,7 +1,9 @@
 public class Archer extends Protagonist{
-    public Archer(String name){// creates an Archer and sets his or her strength to 175
+    public Archer(String name){// creates an Archer and sets his or her strength to 175, mp to 5, and intelligence to 10. 
 	super(name);
 	str = 175;
+	mp = 5;
+	intelligence = 10;
     }
     
     public void normalize(){// debuffs all stats that were buffed in specialize() back to their original values
@@ -18,4 +20,5 @@ public class Archer extends Protagonist{
     public String about(){
 	return "This young archer is very strong. Strength at the cost of speed.";
     }
+    
 }
