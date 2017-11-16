@@ -1,5 +1,5 @@
 public class Slime extends Monster{
-    public Ogre (String name){//creates a Slime and sets its defense to 15
+    public Slime (String name){//creates a Slime and sets its defense to 15
 	super();
 	def = 15;
     }
