@@ -7,10 +7,10 @@ Kendrick Liang
 This is going to be the birth of the greatest RPG Metacritic and IGN will ever see
 
 # Latest Update: 
-v3, Protaganist Subclasses, Monster Subclasses 
+v5, New Magic Attack Feature 
 
 # Character.java 
-The superclass of both Monster.java and Protaganist.java. It contains all of the methods and attributes that are necessary for the basic functionality of a protagonist and a monster in the game. For example, both contain attack() and attributes like Health or Strength
+The superclass of both Monster.java and Protaganist.java. It contains all of the methods and attributes that are necessary for the basic functionality of a protagonist and a monster in the game. For example, both contain attack() and attributes like Health or Strength. Now has an added method called magicAtk() which is an attack based of a characters intelligence. There is limited use of these attacks as Mana points were also added.
 
 # Protaganist.java 
 The class that operates the hero, what the player controls. It contains a unique method named special() where some of its stats increase at the cost of the decrease of one other attribute's value. This is a superclass of the "classes" that the player can choose.  
